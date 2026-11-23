@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#fff1f6"><title>For Meghna ♡</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=DM+Sans:wght@400;500;600;700&family=Sacramento&display=swap');
+:root{--rose:#d76f98;--wine:#98506e;--ink:#684b59;--cream:#fffaf6;--blush:#fff0f5}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:#fff4f7;color:var(--ink);font-family:'DM Sans',sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-2;background:radial-gradient(ellipse at 15% 15%,#ffe0eb,transparent 38%),radial-gradient(ellipse at 90% 70%,#f2dff0,transparent 40%),linear-gradient(140deg,#fffaf6,#fff0f5 55%,#f8eff8)}
+#petals{position:fixed;inset:0;pointer-events:none;z-index:5;overflow:hidden}
+.petal{position:absolute;top:-40px;animation:fall linear infinite;opacity:.6;color:#dc8bab}
+@keyframes fall{to{transform:translate3d(80px,110vh,0) rotate(420deg);opacity:0}}
+.sparkle{position:fixed;color:#e6a5bf;pointer-events:none;animation:twinkle 3s ease-in-out infinite alternate}
+@keyframes twinkle{from{opacity:.15;transform:scale(.7)}to{opacity:.8;transform:scale(1.2)}}
+.shell{min-height:100vh;padding:24px 14px;display:flex;align-items:center;justify-content:center}
+.book{width:min(820px,100%);min-height:690px;position:relative;border-radius:32px;overflow:hidden;background:rgba(255,255,255,.72);border:1px solid rgba(255,255,255,.9);box-shadow:0 25px 90px #a75f7c24;backdrop-filter:blur(14px)}
+.book:before,.book:after{content:"";position:absolute;width:210px;height:210px;border:1px solid #f2cbd9;border-radius:50%;pointer-events:none}
+.book:before{left:-145px;top:-145px;box-shadow:0 0 0 22px #f8e2eb66,0 0 0 44px #f8e2eb44}
+.book:after{right:-150px;bottom:-150px;box-shadow:0 0 0 22px #f8e2eb66,0 0 0 44px #f8e2eb44}
+.inner{position:relative;z-index:1;padding:clamp(25px,6vw,58px);min-height:690px;display:flex;flex-direction:column}
+.nav{display:flex;justify-content:space-between;align-items:center;color:#b07a91;font-size:11px;letter-spacing:.18em;text-transform:uppercase}
+.track{height:3px;background:#f5e1e9;border-radius:20px;margin:16px 0 35px;overflow:hidden}.track i{display:block;height:100%;width:14.285%;background:linear-gradient(90deg,#f0b1c9,#b9688c);transition:width .6s}
+.scene{display:none;flex:1;flex-direction:column;justify-content:center;animation:arrive .8s cubic-bezier(.2,.7,.2,1) both}.scene.on{display:flex}
+@keyframes arrive{from{opacity:0;transform:translateY(22px) scale(.99);filter:blur(3px)}to{opacity:1;transform:none;filter:blur(0)}}
+.kicker{text-align:center;text-transform:uppercase;letter-spacing:.24em;color:#c07b98;font-size:10px;font-weight:700;margin-bottom:14px}
+h1,h2{font-family:'Cormorant Garamond',serif;color:#92516f;font-weight:600;text-align:center;line-height:.99;margin:0 0 20px}
+h1{font-size:clamp(52px,10vw,88px)}h2{font-size:clamp(42px,8vw,65px)}
+.script{font-family:'Sacramento',cursive;color:#d0789d;font-size:clamp(32px,6vw,47px);text-align:center;margin:-6px 0 16px}
+p{font-size:15px;line-height:1.95;color:#765d69;margin:0 0 15px}.center{text-align:center}.intro{font-size:17px;max-width:570px;margin:0 auto 12px;text-align:center}
+.ornament{display:flex;align-items:center;justify-content:center;gap:13px;color:#d18aa6;margin:16px 0}.ornament:before,.ornament:after{content:"";height:1px;width:65px;background:#edcbd8}
+.envelopeWrap{height:190px;display:grid;place-items:center;margin:14px 0 18px;perspective:800px}
+.envelope{width:190px;height:130px;background:#eaa9c2;position:relative;border-radius:9px;box-shadow:0 17px 30px #b9658733;cursor:pointer;transition:.4s}
+.envelope:before{content:"";position:absolute;inset:0;background:#f7ccda;clip-path:polygon(0 0,50% 58%,100% 0);transform-origin:top;transition:.6s;z-index:2;border-radius:9px 9px 0 0}
+.envelope:after{content:"";position:absolute;inset:0;background:#df91ae;clip-path:polygon(0 100%,0 0,50% 55%,100% 0,100% 100%);border-radius:0 0 9px 9px}
+.seal{position:absolute;z-index:3;left:50%;top:50%;transform:translate(-50%,-50%);width:42px;height:42px;border-radius:50%;background:#fff1f5;display:grid;place-items:center;color:#b65d83;font-size:22px;box-shadow:0 3px 9px #9f4f7133}
+.envelope.open:before{transform:rotateX(180deg)}.letter{position:absolute;width:160px;height:100px;left:15px;bottom:10px;background:#fffaf7;z-index:1;transition:.6s;border-radius:4px}.envelope.open .letter{transform:translateY(-78px)}
+.btn{border:0;border-radius:99px;padding:14px 23px;font:600 13px 'DM Sans';cursor:pointer;transition:.25s;letter-spacing:.02em}
+.btn:hover{transform:translateY(-3px);box-shadow:0 10px 22px #a95e7d25}
+.primary{color:white;background:linear-gradient(120deg,#df8eac,#b45c83);box-shadow:0 8px 18px #c87d9c33}
+.soft{background:#fff1f6;color:#a15b7b;border:1px solid #f1d4df}
+.buttons{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:24px}
+.note{position:relative;background:linear-gradient(145deg,#fffaf7,#fff1f6);border:1px solid #f1d6e0;border-radius:22px;padding:24px 25px;margin:18px 0;box-shadow:0 12px 30px #a85c7b0c}
+.note:before{content:"“";font-family:Georgia;font-size:65px;line-height:0;color:#e7b4c7;position:absolute;top:22px;left:13px}
+.note p:last-child{margin-bottom:0}
+.note strong{color:#a35477}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:13px;margin:20px 0}
+.mini{border:1px solid #f2dbe4;background:#fffafd;border-radius:19px;padding:19px 17px;transition:.25s}
+.mini:hover{transform:translateY(-4px);box-shadow:0 12px 24px #b16b8714}
+.mini .emoji{font-size:25px;display:block;margin-bottom:9px}.mini b{display:block;color:#a45c7d;font-family:'Cormorant Garamond',serif;font-size:22px;margin-bottom:5px}.mini span:last-child{font-size:13px;line-height:1.7;color:#806a75}
+.bigquote{font-family:'Cormorant Garamond',serif;font-size:clamp(27px,5vw,37px);font-style:italic;line-height:1.35;text-align:center;color:#a35b7b;padding:18px 10px}
+.photoStrip{display:flex;justify-content:center;gap:12px;margin:18px auto 20px}
+.bubble{width:76px;height:76px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(145deg,#ffe3ed,#f6d9eb);font-size:30px;box-shadow:0 8px 20px #b96d8b20}
+.promise{display:flex;gap:13px;align-items:flex-start;padding:12px 0;border-bottom:1px dashed #efd5df}.promise:last-child{border:0}.promise i{font-style:normal;font-size:21px}.promise b{color:#a45a7b}
+.finalCard{background:linear-gradient(145deg,#fff7fa,#fffafd);border:1px solid #f0d2df;border-radius:25px;padding:25px;text-align:center;box-shadow:0 15px 40px #b56a8614}
+.heartBeat{font-size:60px;display:block;animation:beat 1.4s infinite}@keyframes beat{0%,100%{transform:scale(1)}15%{transform:scale(1.16)}30%{transform:scale(1)}45%{transform:scale(1.1)}}
+#reply{min-height:44px;margin-top:17px;color:#a35477;font-weight:600;line-height:1.7}
+.foot{text-align:center;font-size:11px;color:#b28c9d;margin-top:24px}
+@media(max-width:560px){.shell{padding:10px}.book{border-radius:24px;min-height:calc(100vh - 20px)}.inner{padding:25px 20px;min-height:calc(100vh - 20px)}.cards{grid-template-columns:1fr 1fr;gap:9px}.mini{padding:14px 12px}.mini b{font-size:19px}.mini span:last-child{font-size:12px}.note{padding:21px 19px}.track{margin-bottom:26px}}
+</style></head>
+<body>
+<div id="petals"></div>
+<div class="shell"><main class="book"><div class="inner">
+<div class="nav"><span>✧ a little note for you ✧</span><span id="count">01 — 07</span></div><div class="track"><i id="fill"></i></div>
+
+<section class="scene on center">
+<div class="kicker">A tiny surprise, made with care</div><div class="script">just for you, Meghna</div>
+<h1>A Little<br>Something</h1><div class="ornament">♡ ✧ ♡</div>
+<p class="intro">Koi badi-badi baatein nahi… bas kuch chhoti si feelings, kuch cute si wishes, aur ek sawaal jo main aapse poochna chahta hoon.</p>
+<div class="envelopeWrap"><div class="envelope" id="env" onclick="openEnvelope()"><div class="letter"></div><div class="seal">♡</div></div></div>
+<p class="center" id="tapText" style="font-size:12px;color:#b18498">The little envelope is waiting for you. Tap it ♡</p>
+<div class="buttons"><button class="btn primary" onclick="go(1)">Let's open this little story →</button></div>
+</section>
+
+<section class="scene">
+<div class="kicker">01 · Before anything else</div><h2>For now,<br><i>Meghna. ♡</i></h2><div class="script">and that's lovely enough</div>
+<p>Abhi toh humari baat bhi itni achhe se nahi hui hai ki hum ek-doosre ko poori tarah jaan sakein. Aur mujhe lagta hai ki kisi ko jaan-ne aur samajhne mein thoda waqt dena chahiye.</p>
+<div class="note"><p>Abhi humne ek-doosre ko koi nickname bhi nahi diya hai, isliye filhaal main aapko <strong>Meghna</strong> hi bulaunga. Pata nahi, agar abhi se koi alag naam de doon toh aapko achha lage ya nahi. Isliye pehle ek-doosre ko thoda jaan lete hain, samajh lete hain… phir kabhi koi cute sa nickname bhi soch lenge. ❤️</p></div>
+<p>Aur haan, ladka achha hoon ya nahi, ye toh waqt ke saath pata chal hi jayega… lekin aapka khayal bahut achhe se rakhunga. 🥹</p>
+<div class="bigquote">“Some things are sweeter when they happen slowly.”</div>
+<div class="buttons"><button class="btn soft" onclick="go(0)">← Back</button><button class="btn primary" onclick="go(2)">Turn the page →</button></div>
+</section>
+
+<section class="scene">
+<div class="kicker">02 · The little things</div><h2>I'd love to know<br><i>your kind of magic.</i></h2>
+<p>Abhi main aapko poori tarah nahi jaanta, aur shayad isi mein ek pyaari si baat hai. Aapki pasand, na-pasand, random thoughts, funny habits aur woh chhoti-chhoti baatein jaan-na chahta hoon jo aapko aap banati hain.</p>
+<div class="cards">
+<div class="mini"><span class="emoji">🌷</span><b>Your smile</b><span>Woh chhoti si cheez jo bina wajah aapke chehre par smile le aaye.</span></div>
+<div class="mini"><span class="emoji">☁️</span><b>Your quiet side</b><span>Jab aap chup rehna chahein, tab bhi aapki space ki respect.</span></div>
+<div class="mini"><span class="emoji">😂</span><b>Your silly talks</b><span>Random jokes, bekaar si baatein aur bina wajah hasna.</span></div>
+<div class="mini"><span class="emoji">✨</span><b>Your dreams</b><span>Aapke goals, plans aur woh sab jo aap achieve karna chahti hain.</span></div>
+</div>
+<p>Main aapko kisi imagination ke hisaab se nahi, balki asli mein jaisi aap hain waise jaan-na chahta hoon. No expectations to be perfect. Just be yourself.</p>
+<div class="bigquote">“I don't want to assume I know you. I'd rather discover you, one conversation at a time.”</div>
+<div class="buttons"><button class="btn soft" onclick="go(1)">← Back</button><button class="btn primary" onclick="go(3)">A little more →</button></div>
+</section>
+
+<section class="scene">
+<div class="kicker">03 · A wish for the two of us</div><h2>Not a perfect story.<br><i>A real one.</i></h2>
+<div class="photoStrip"><div class="bubble">☕</div><div class="bubble">🌸</div><div class="bubble">🌙</div></div>
+<p>Main kisi perfect fairytale ka promise nahi kar raha. Bas itni si wish hai ki agar hum aage badhein, toh humare beech comfort ho, respect ho aur ek-doosre se khulkar baat karne ki jagah ho.</p>
+<div class="note">
+<div class="promise"><i>💬</i><div><b>Random conversations</b><br><span>Chhoti si baat ko bhi lambi conversation bana dena.</span></div></div>
+<div class="promise"><i>🤝</i><div><b>Understanding</b><br><span>Ek-doosre ko sunna, samajhna, bina jaldi judge kiye.</span></div></div>
+<div class="promise"><i>🎉</i><div><b>Little celebrations</b><br><span>Aapki chhoti achievements ko bhi dil se celebrate karna.</span></div></div>
+<div class="promise"><i>🕊️</i><div><b>Personal space</b><br><span>Apne dreams, friends aur individuality ke liye jagah.</span></div></div>
+</div>
+<p>Main aapki life mein extra pressure nahi, ek achhi si feeling banna chahta hoon. Aisa insaan jisse baat karke aapko halka aur comfortable feel ho — lekin ye sab waqt aur trust ke saath hi possible hai.</p>
+<div class="buttons"><button class="btn soft" onclick="go(2)">← Back</button><button class="btn primary" onclick="go(4)">Some promises →</button></div>
+</section>
+
+<section class="scene">
+<div class="kicker">04 · From my heart</div><h2>A few little promises,<br><i>not impossible ones.</i></h2>
+<p>Main ye nahi kahunga ki mujhse kabhi galti nahi hogi. Main bhi insaan hoon. Lekin meri koshish hamesha ye rahegi ki aapki feelings ko samjhun aur kabhi lightly na loon.</p>
+<div class="cards">
+<div class="mini"><span class="emoji">🤍</span><b>Respect</b><span>Aapki choices, opinions, boundaries aur individuality ki respect.</span></div>
+<div class="mini"><span class="emoji">🫶</span><b>Care</b><span>Aapka khayal rakhna, bina aapko control ya restrict kiye.</span></div>
+<div class="mini"><span class="emoji">🔐</span><b>Loyalty</b><span>Honesty aur trust. Koi games nahi, koi unnecessary doubts nahi.</span></div>
+<div class="mini"><span class="emoji">🌷</span><b>Understanding</b><span>Galti ho toh ego se pehle baat aur sudhar ko chunna.</span></div>
+</div>
+<div class="note"><p>Main aapko kabhi jaan-bujhkar hurt karne ke baare mein sochunga bhi nahi. Bhagwan na kare kabhi anjaane mein meri kisi baat se takleef ho jaaye, toh thoda bada dil rakhkar maaf kar dijiyega. Main bhi aapki baat samajhne aur apni galti sudharne ki poori koshish karunga. ❤️</p></div>
+<div class="buttons"><button class="btn soft" onclick="go(3)">← Back</button><button class="btn primary" onclick="go(5)">One funny confession →</button></div>
+</section>
+
+<section class="scene center">
+<div class="kicker">05 · A very important disclosure</div><h2>One thing about me…</h2><div class="script">please don't judge 😂</div>
+<div class="photoStrip"><div class="bubble">🏏</div><div class="bubble">❤️</div><div class="bubble">😭</div></div>
+<p>Loyalty ki baat nikli hai toh ek important information dena zaroori hai… main khud <strong style="color:#a35477">RCB ka fan</strong> hoon!</p>
+<div class="note"><p class="center"><strong>Itne saalon se RCB ko support kar raha hoon…</strong></p><p class="center">Ab itna patience aur loyalty toh develop ho hi chuki hai! 😂❤️</p><p class="center">Jokes apart, trust mere liye bahut important hai. Main chahta hoon ki hum dono ek-doosre ke saath honest rahein. Trust maanga nahi, apne actions se earn kiya jaata hai.</p></div>
+<p>Aur haan, kabhi RCB ke match ke din main thoda emotional ho jaun toh please samajh lijiyega. Kuch dard explain nahi kiye ja sakte. 😭😂</p>
+<div class="bigquote">“A little humour, a lot of honesty, and hopefully many reasons to smile.”</div>
+<div class="buttons"><button class="btn soft" onclick="go(4)">← Back</button><button class="btn primary" onclick="go(6)">The last little page →</button></div>
+</section>
+
+
+<section class="scene center">
+<div class="kicker">06 · A little memory I wanted to tell you</div>
+<h2>That one picture<br><i>stayed with me. ♡</i></h2>
+<div class="script">just one look, and a little smile</div>
+<div style="width:min(285px,82%);margin:18px auto 24px;padding:13px 13px 42px;background:#fff;border:1px solid #f0dce4;border-radius:5px;box-shadow:0 16px 35px #9d5b761c;transform:rotate(-2deg);position:relative">
+  <div style="height:210px;border-radius:3px;background:radial-gradient(circle at 50% 38%,#fff8fb 0 15%,transparent 16%),linear-gradient(145deg,#f9dce7,#f8eaf0 52%,#f2d7e5);display:flex;align-items:center;justify-content:center;flex-direction:column;color:#b66b8b">
+    <span style="font-size:43px">🌷</span><span style="font-family:'Cormorant Garamond',serif;font-size:19px;font-style:italic">a little moment</span>
+    <span style="font-size:10px;letter-spacing:.12em;margin-top:7px">I STILL REMEMBER</span>
+  </div>
+  <div style="position:absolute;bottom:10px;left:0;right:0;text-align:center;font-family:'Sacramento',cursive;font-size:27px;color:#a45a7a">that cute smile ♡</div>
+</div>
+<p>Aapko maine bas ek baar dekha hai — woh bhi jab aapne mujhe apni picture bheji thi. Shayad aapke liye woh bas ek normal si picture hogi, lekin sach kahun toh usmein aap bahut hi cute lag rahi thi.</p>
+<div class="note" style="text-align:left">
+  <p>Us ek picture ko dekhkar mere chehre par apne aap ek smile aa gayi thi. Main ye nahi kahunga ki sirf ek photo dekhkar main aapko poori tarah jaan gaya hoon — bilkul nahi. Bas itna keh sakta hoon ki us chhoti si jhalak ne mujhe aapse aur baat karne, aapko aur achhe se jaan-ne ki curiosity de di. ❤️</p>
+</div>
+<p>Main chahta hoon ki aapke saath jo bhi rishta bane, use dil se aur achhe se nibhaun — chahe woh friendship ho ya waqt ke saath kuch aur khoobsurat. Aapko respect, care aur honesty mile; aap apni baatein bina dare keh sakein; aur aapko kabhi apna asli self chhupana na pade.</p>
+<p>Mujhe aapse bas trust, loyalty aur thoda sa pyaar chahiye — baaki sab hum dheere-dheere samajh lenge. Main aapki har khushi ka reason banne ka vaada toh nahi kar sakta, lekin mushkil waqt mein aapka saath dene aur aapka khayal rakhne ki poori koshish zaroor karunga.</p>
+<div class="bigquote">“I may have seen just one picture of you, but I'd love to know the person behind that smile.”</div>
+<div class="buttons"><button class="btn soft" onclick="go(5)">← Back</button><button class="btn primary" onclick="go(7)">One last question →</button></div>
+</section>
+
+<section class="scene center">
+<div class="kicker">07 · No pressure, just a question</div><span class="heartBeat">💗</span><div class="script">So, Meghna…</div><h2>Can we see<br>where this goes?</h2>
+<p class="intro">Meghna, kya aap mere saath is khoobsurat shuruaat ko ek chance dena chahengi?</p>
+<p>Main chahta hoon ki hum bina jaldi kiye, ek-doosre ko samjhein, apni chhoti-chhoti khushiyan share karein aur trust ke saath aage badhein. Agar waqt ke saath aapko bhi lage ki hum kuch beautiful shuru kar sakte hain, toh mujhe sach mein bahut khushi hogi.</p>
+<div class="finalCard">
+<div class="script">one little question</div><h2 style="font-size:43px;margin-bottom:12px">Would you like to give<br>“us” a chance? ♡</h2>
+<p>Aapka exam sabse pehle hai. Iska reply abhi dena zaroori nahi. Take your time, genuinely.</p>
+<div class="buttons"><button class="btn primary" onclick="replyYes()">Yes, let's see where it goes 💗</button><button class="btn soft" onclick="replyTime()">I need a little time 🌷</button></div>
+<div id="reply" aria-live="polite"></div>
+</div>
+<p style="margin-top:21px">Whatever your answer, I'll respect it. Bas aap khush rahiye, apna exam achhe se dijiye aur apni smile banaye rakhiye. 😊</p>
+<div class="bigquote">“Maybe this is just the beginning of a lovely friendship… and maybe, someday, something more.”</div>
+<div class="buttons"><button class="btn soft" onclick="go(6)">← Read that again</button></div>
+<div class="foot">Made with warmth, respect & a little RCB-level patience · ♡</div>
+</section>
+</div></main></div>
+<script>
+let page=0;const scenes=[...document.querySelectorAll('.scene')];
+function go(n){if(n<0||n>=scenes.length)return;scenes[page].classList.remove('on');page=n;scenes[page].classList.add('on');document.getElementById('count').textContent=String(page+1).padStart(2,'0')+' — 07';document.getElementById('fill').style.width=((page+1)/7*100)+'%';window.scrollTo({top:0,behavior:'smooth'});}
+function openEnvelope(){let e=document.getElementById('env');e.classList.toggle('open');document.getElementById('tapText').textContent=e.classList.contains('open')?'A little note, just for you ♡':'The little envelope is waiting for you. Tap it ♡';}
+// Add your WhatsApp number here with country code, digits only (India: 91XXXXXXXXXX).
+// Leave blank until you want WhatsApp notifications enabled.
+const YOUR_WHATSAPP_NUMBER = "917209421622";
+
+function notifyOnWhatsApp(message){
+  if(!YOUR_WHATSAPP_NUMBER){
+    return false;
+  }
+  const url = "https://wa.me/" + YOUR_WHATSAPP_NUMBER + "?text=" + encodeURIComponent(message);
+  window.open(url, "_blank", "noopener");
+  return true;
+}
+function replyYes(){
+  document.getElementById('reply').innerHTML='You just made me smile. Thank you. Let’s take it one step at a time. ❤️ <br> <span style="font-size:24px">♡ ✨ ♡</span>';
+  hearts();
+  notifyOnWhatsApp("Meghna ne aapka proposal accept karne ke liye YES choose kiya hai. ❤️🥹");
+}
+function replyTime(){
+  document.getElementById('reply').innerHTML='Bilkul, aap aaram se waqt lijiye. ❤️ Aapke exams, comfort aur feelings sabse important hain. Koi pressure nahi — jab aap ready hon, tab baat kar lenge. 🌷';
+  notifyOnWhatsApp("Meghna ne proposal ke liye abhi thoda time maanga hai. Unhone kaha hai ki woh sochne ke liye waqt chahti hain. Please unhe space aur time dein. 🌷");
+}
+function hearts(){for(let i=0;i<18;i++){let h=document.createElement('span');h.textContent='♥';h.style.cssText=`position:fixed;left:${Math.random()*100}vw;top:75vh;color:#df8eac;font-size:${14+Math.random()*20}px;z-index:10;pointer-events:none;transition:transform 2.4s ease,opacity 2.4s;`;document.body.appendChild(h);requestAnimationFrame(()=>{h.style.transform=`translate(${(Math.random()-.5)*130}px,-${180+Math.random()*350}px) rotate(${Math.random()*100}deg)`;h.style.opacity='0'});setTimeout(()=>h.remove(),2500)}}
+const petalBox=document.getElementById('petals');for(let i=0;i<19;i++){let s=document.createElement('span');s.className='petal';s.textContent=['✿','♡','·','✧'][i%4];s.style.left=Math.random()*100+'%';s.style.animationDuration=(12+Math.random()*17)+'s';s.style.animationDelay=(-Math.random()*25)+'s';s.style.fontSize=(12+Math.random()*15)+'px';petalBox.appendChild(s)}
+</script></body></html>
